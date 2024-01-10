@@ -47,7 +47,7 @@ newtupp = *[x**2 for x in tupp], #unpacking operator with list comprehension to 
 print("new tuple is:")
 print(newtupp)
 
-#DESTRUCTURING
+#DESTRUCTURING IN DICTIONARY
 my_dict = {"name": "krati" , "age": 22}
 x,y = my_dict
 print(x)
@@ -68,6 +68,7 @@ obj2 = enumerate(S1)
 print(type(obj2))
 print(list(enumerate(S1)))
 
+#DESTRUCTURING IN FOR LOOP
 l1 = ['rise', 'and', 'shine']
 for x in enumerate(l1):
     print (x)
@@ -78,3 +79,40 @@ for count, ele in enumerate(l1,200):
 for count,ele in enumerate(l1):
     print(count)
     print (ele)
+
+employee = [
+    ("mark", 25, "marketing"),
+    ("joshua", 22, "finance"),
+    ("olivia", 21, "IT")
+]
+
+for name, age, domain in employee:
+    print(f"name= {name}, age= {age}, domain= {domain}")
+
+employeedemo = [
+    ("mike", 25, "marketing"),
+    ("taylor", 22, "finance"),
+    ("zain", 21, "IT")
+]
+
+for person in employeedemo:
+    print(f"name= {person[0]}, age= {person[1]}, domain= {person[2]}")
+
+#IGNORING VALUES
+person = ("taylor", 22, "finance")
+name, _, profession = person
+print(name,profession)
+
+#USING * TO COLLECT VALUES
+a, *b = [1,2,3,4,5]
+print(a)
+print(b)
+
+*c, d = [1,2,3,4,5]
+print(c)
+print(d)
+
+a, *b, c = [1,2,3,4,5]
+print(a)
+print(b)
+print(c)
