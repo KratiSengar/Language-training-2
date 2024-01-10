@@ -47,6 +47,16 @@ newtupp = *[x**2 for x in tupp], #unpacking operator with list comprehension to 
 print("new tuple is:")
 print(newtupp)
 
+#DESTRUCTURING
+my_dict = {"name": "krati" , "age": 22}
+x,y = my_dict
+print(x)
+print(y)
+
+x,y = my_dict.values()
+print(x)
+print(y)
+
 #ENUMERATE
 l1 = ['rise', 'and', 'shine']
 obj1 = enumerate(l1)
@@ -68,13 +78,3 @@ for count, ele in enumerate(l1,200):
 for count,ele in enumerate(l1):
     print(count)
     print (ele)
-
-#DESTRUCTURING
-my_dict = {"name": "krati" , "age": 22}
-x,y = my_dict
-print(x)
-print(y)
-
-x,y = my_dict.values()
-print(x)
-print(y)
