@@ -58,10 +58,20 @@ obj2 = enumerate(S1)
 print(type(obj2))
 print(list(enumerate(S1)))
 
+l1 = ['rise', 'and', 'shine']
+for x in enumerate(l1):
+    print (x)
+
+for count, ele in enumerate(l1,200):
+    print(count,ele)
+
+for count,ele in enumerate(l1):
+    print(count)
+    print (ele)
+
 #DESTRUCTURING
 my_dict = {"name": "krati" , "age": 22}
 x,y = my_dict
-
 print(x)
 print(y)
 
