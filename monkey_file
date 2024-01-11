@@ -1,0 +1,11 @@
+import original_file_for_monkey_patching
+
+def monkey_file(self):
+    print("this is monkey file")
+
+#replacing address of both functions
+original_file_for_monkey_patching.original.hello = monkey_file
+
+obj = original_file_for_monkey_patching.original()
+
+obj.hello()

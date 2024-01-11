@@ -47,7 +47,7 @@ newtupp = *[x**2 for x in tupp], #unpacking operator with list comprehension to 
 print("new tuple is:")
 print(newtupp)
 
-#DESTRUCTURING IN DICTIONARY
+#DESTRUCTURING IN DICTIONARY (breaking iterables into single values)
 my_dict = {"name": "krati" , "age": 22}
 x,y = my_dict
 print(x)
@@ -57,7 +57,7 @@ x,y = my_dict.values()
 print(x)
 print(y)
 
-#ENUMERATE
+#ENUMERATE (index and element pairs)
 l1 = ['rise', 'and', 'shine']
 obj1 = enumerate(l1)
 print(type(obj1))
@@ -92,7 +92,7 @@ for name, age, domain in employee:
 employeedemo = [
     ("mike", 25, "marketing"),
     ("taylor", 22, "finance"),
-    ("zain", 21, "IT")
+    ("zayn", 21, "IT")
 ]
 
 for person in employeedemo:
