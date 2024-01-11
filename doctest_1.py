@@ -40,3 +40,21 @@ def factorial(n):
     """
     return 1 if (n==1 or n==0) else n * factorial(n - 1) 
 
+def greet(name="krati"):
+    """function to print hello
+    examples:-
+    >>> greet()
+    hello krati
+    """
+    print(f"hello {name}")
+
+def max(a,b):
+    """finction to find maximum value
+    example:
+    >>> max(2,3)
+    b is greater
+    """
+    if a>b:
+        print("a is greater")
+    else: 
+        print("b is greater")
